@@ -144,9 +144,6 @@ d = 1 or 0 or 0             # will return 1
 ```
 
 
-
-
-
 Q20. What are conditional statements in Python?
 Ans: These are the statements that handle conditions in programs, and guide the program to take decisions based on conditions.
 For e.g.: if a > 10:
@@ -167,40 +164,6 @@ if age >= 18:
     print("I can Vote")
 else:
     print("I can't vote")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 Q23. Write a code that displays the sum of all the even numbers from the given list.
@@ -231,26 +194,6 @@ elif c>a and c>b:
     print("the greatest number is ", c)
 else:
     print("none is the only greatest")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 Q25. Write a program to display only those numbers from a list that satisfy the following conditions
