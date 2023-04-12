@@ -1,1 +1,205 @@
+Q26. What is a string? How can we declare string in Python?
+Ans: It is a text data type. we can give one character alphabet or number or special symbols and can even give a line of alphabets or numbers or special symbols.
 
+declaration:
+ str1 = '123'
+ or 
+ str2 = " this is ekta's"
+
+Q27. How can we access the string using its index?
+Ans: lets say we have a string
+     str1 = "EKTA"
+     and i want to access the 3rd element i.e. T
+     so, print(str1[2])
+
+Q28. Write a code to get the desired output of the following
+
+string = "Big Data iNeuron"
+desired_output = "iNeuron"
+Ans: print(string[9: ])
+
+Q29. Write a code to get the desired output of the following
+
+string = "Big Data iNeuron"
+desired_output = "norueNi"
+Ans: print(string[-1:-8:-1])
+
+Q30. Resverse the string given in the above question.
+Ans: print(string[-1: :-1])
+
+Q31. How can you delete entire string at once?
+Ans: Python will not allow deleting a particular character in a string. Whereas you can remove the entire string variable using the del command.
+i.e. del string_variable_name
+
+Q32. What is escape sequence?
+Ans: Escape sequences allow you to insert special characters in strings. Put a backslash (\) before the character you want to escape.
+An escape sequence is a sequence of characters that, when used inside a character or string, does not represent itself but is converted into another character or series of characters that may be difficult or impossible to express directly, like newline (\n), tab (\t), and so on.
+
+Q33. How can you print the below string?
+
+'iNeuron's Big Data Course'
+Ans:print("iNeuron's Big Data Course")
+print('iNeuron\'s Big Data Course')
+
+Q34. What is a list in Python?
+Ans: List is a collection(sequential) data structure that can contain heterogeneous kind of data( int, float or any other list as well as its elements). Elements are stored at contiguous memory locations.
+e.g.: list1 =[ 1,2, 's', 5.6, 'ekta', [1,2,3] ]
+
+
+Q35. How can you create a list in Python?
+Ans:  list1 =[ 1,2, 's', 5.6, 'ekta', [1,2,3] ]
+
+Q36. How can we access the elements in a list?
+Ans: List is a sequential data structure so we can access elements through index values.
+e.g.:  list1 =[ 1,2, 's', 5.6, 'ekta', [1,2,3] ]
+      to access 2 which is at 1st index
+      print(list1[1])
+
+Q37. Write a code to access the word "iNeuron" from the given list.
+
+lst = [1,2,3,"Hi",[45,54, "iNeuron"], "Big Data"]
+Ans: print(lst[4][2])
+
+Q38. Take a list as an input from the user and find the length of the list.
+Ans: list1 = []
+n = int(input('enter the number of elements'))
+print("enter the elements of list")
+for i in range(0,n):
+   list1.append(input())
+print(len(list1))
+
+Q39. Add the word "Big" in the 3rd index of the given list.
+
+lst = ["Welcome", "to", "Data", "course"]
+Ans: lst = ["Welcome", "to", "Data", "course"]
+lst.insert(2,"big")
+print(lst)
+
+Q40. What is a tuple? How is it different from list?
+Ans: Tuple is a sequential collection data type that can hold hetrogeneous data. But it is immutable unlike lists.
+     once created , you can only access its elements and no changes can be made.
+     
+
+Q41. How can you create a tuple in Python?
+Ans: tuple1 = (20, "hi", [2,4,6], (3,4))
+
+Q42. Create a tuple and try to add your name in the tuple. Are you able to do it? Support your answer with reason.
+Ans: creating an empty tuple
+     tuple = ()
+     tuple.append("ekta")
+     
+     error: tuple object has no attribute append
+     
+     because tuples are immutable.
+     
+Q43. Can two tuple be appended. If yes, write a code for it. If not, why?
+Ans: You can't add elements to a tuple because of their immutable property.
+
+Q44. Take a tuple as an input and print the count of elements in it.
+Ans: my_tuple = tuple(input('Enter space-separated words: ').split())
+
+print(my_tuple)
+print(len(my_tuple))
+
+Q45. What are sets in Python?
+Ans: Sets are used to store multiple items in a single variable.
+     Set items are unordered, unchangeable, and do not allow duplicate values.
+     e.g.: thisset = {"apple", "banana", "cherry"}
+           print(thisset)
+           
+Q46. How can you create a set?
+Ans: thisset = {"apple", "banana", "cherry"}
+     print(thisset)   
+
+Q47. Create a set and add "iNeuron" in your set.
+Ans: thisset = {"apple", "banana", "cherry"}
+print(thisset)
+thisset.add("iNeuron")
+print(thisset)
+
+Q48. Try to add multiple values using add() function.
+Ans: thisset = {"apple", "banana", "cherry"}
+print(thisset)
+thisset.add(6)
+thisset.add("hi")
+print(thisset)
+
+Q49. How is update() different from add()?
+Ans:We use add() method to add single value to a set. We use update() method to add sequence values to a set.
+
+Q50. What is clear() in sets?
+Ans: The clear() method removes all elements in a set.
+
+Q51. What is frozen set?
+Ans: Frozen set is just an immutable version of a Python set object. While elements of a set can be modified at any time, elements of the frozen set remain the same after creation.
+
+Q52. How is frozen set different from set?
+Ans: While elements of a set can be modified at any time, elements of the frozen set remain the same after creation.
+
+Q53. What is union() in sets? Explain via code.
+Ans : The union() method returns a set that contains all items from the original set, and all items from the specified set(s).
+You can specify as many sets you want, separated by commas.
+It does not have to be a set, it can be any iterable object.
+If an item is present in more than one set, the result will contain only one appearance of this item.
+
+x = {"a", "b", "c"}
+y = {"f", "d", "a"}
+z = {"c", "d", "e"}
+
+result = x.union(y, z)
+
+print(result)
+
+Q54. What is intersection() in sets? Explain via code.
+Ans: The intersection() method returns a set that contains the similarity between two or more sets. Meaning: The returned set contains only items that exist in both sets, or in all sets if the comparison is done with more than two sets.
+
+x = {"a", "b", "c"}
+y = {"c", "d", "e"}
+z = {"f", "g", "c"}
+
+result = x.intersection(y, z)
+
+print(result)
+
+Q55. What is dictionary ibn Python?
+Ans: Dictionaries are used to store data values in key:value pairs.
+A dictionary is a collection which is ordered*, changeable and do not allow duplicates.
+As of Python version 3.7, dictionaries are ordered. In Python 3.6 and earlier, dictionaries are unordered.
+Dictionaries are written with curly brackets, and have keys and values:
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+print(thisdict)
+
+Q56. How is dictionary different from all other data structures.
+Ans: The dictionary Data Structure in Python is an unordered collection of items. While other Data Structures use only one value as the element, the dictionary is a slightly more compound data structure. It makes use of two elements i.e. a pair of elements, namely, a key and a value.
+
+Q57. How can we delare a dictionary in Python?
+Ans: thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+print(thisdict)
+
+Q58. What will the output of the following?
+
+var = {}
+print(type(var))
+Ans: <class 'dict'>
+
+Q59. How can we add an element in a dictionary?
+Ans: thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+print(thisdict)
+thisdict["made in"]= "india" 
+print(thisdict)
+
+Q60. Create a dictionary and access all the values in that dictionary.
+
+Q61. Create a nested dictionary and access all the element in the inner dictionary.
