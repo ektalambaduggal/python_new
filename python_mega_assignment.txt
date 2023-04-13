@@ -201,5 +201,24 @@ thisdict["made in"]= "india"
 print(thisdict)
 
 Q60. Create a dictionary and access all the values in that dictionary.
+Ans: thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+print(thisdict['brand'])
+print(thisdict['model'])
+print(thisdict['year'])
+print(thisdict)
 
 Q61. Create a nested dictionary and access all the element in the inner dictionary.
+Ans: thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964,
+  "color" : {'model1': 'black', 'model2':'white'}
+}
+print(thisdict)
+print(thisdict['color']['model1'])
+print(thisdict['color']['model2'])
+print(thisdict['color'])
