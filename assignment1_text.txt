@@ -1,7 +1,8 @@
 ## Assignment Part-1
 
 Q1. Why do we call Python as a general purpose and high-level programming language?
-Ans: Python is called a general-purpose programming language because it is not specialized for any specific problems and can be used to create a variety of different programs. 
+Ans: Python is called a general-purpose programming language because it is not specialized for any specific problems
+and can be used to create a variety of different programs. 
 
 Python is called high-level programming language because it is easy for humans to write and read python code. It is English like language.
 
